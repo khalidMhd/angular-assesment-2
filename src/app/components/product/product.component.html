@@ -1,0 +1,5 @@
+<div class="product-card" [appInCart]="inCart">
+  <h3 class="product-name">{{ product.name }}</h3>
+  <p class="product-price">{{ product.price | price }}</p>
+  <button class="add-to-cart-btn" (click)="addToCart()">Add to Cart</button>
+</div>

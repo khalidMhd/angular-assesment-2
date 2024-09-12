@@ -1,0 +1,17 @@
+<div class="cart-container" *ngIf="cartItems.length > 0; else emptyCart">
+  <h2 class="cart-title">Your Cart</h2>
+  <div
+    class="cart-item"
+    *ngFor="let item of cartItems"
+    [ngClass]="{ 'zero-quantity': item.quantity === 0 }"
+  >
+    <p>
+      {{ item.product.name }} -
+      <span class="quantity">Quantity: {{ item.quantity }}</span>
+    </p>
+  </div>
+  <h3 class="total-price">Total: {{ getTotalPrice() | currency }}</h3>
+</div>
+<ng-template #emptyCart>
+  <p class="empty-cart-message">Your cart is empty</p>
+</ng-template>

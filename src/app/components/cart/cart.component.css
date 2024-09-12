@@ -1,0 +1,40 @@
+.cart-container {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 32px;
+  background-color: #f9f9f9;
+}
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+.cart-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.quantity {
+  font-weight: bold;
+  color: #555;
+}
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+  color: #28a745;
+}
+.empty-cart-message {
+  font-size: 18px;
+  color: #777;
+}
+
+.zero-quantity {
+  color: red;
+  text-decoration: line-through;
+}
+

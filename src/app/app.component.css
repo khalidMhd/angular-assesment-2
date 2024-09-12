@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.product-list {
+  flex: 2;
+  margin-right: 16px;
+}
+.cart {
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
